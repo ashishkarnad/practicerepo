@@ -1,0 +1,13 @@
+version: '2'
+services:
+    databases:
+      image: mysql
+      ports: 
+      - "3306:3306"
+      environment:
+      - MYSQL_ROOT_PASSWORD=example
+      - MYSQL_USER=user
+      - MYSQL_USER_PASSWORD=example
+      - MYSQL_DATABASE=demodb
+    web:
+      image: nginx
