@@ -5,7 +5,7 @@ FROM ubuntu:latest
 #RUN apt-get update -y
 #RUN apt-get install -y python python-pip wget
 
-RUN apt-get update && apt-get install -y python python-pip python-dev build-essential
+RUN apt-get update && apt-get install -y python3 python3-pip python-dev build-essential
 #RUN apt-get install -y python-pip python-dev build-essential
 #RUN apt-get install -yqq python-pip3 
 RUN apt-get install -y nginx
