@@ -1,9 +1,13 @@
 FROM ubuntu:latest
 
-RUN apt-get update -y
+
+
+#RUN apt-get update -y
 #RUN apt-get install -y python python-pip wget
-RUN apt-get install -y python-pip python-dev build-essential
-RUN apt-get install -yqq python-pip3 
+
+RUN apt-get update && apt-get install -y python python-pip python-dev build-essential
+#RUN apt-get install -y python-pip python-dev build-essential
+#RUN apt-get install -yqq python-pip3 
 RUN apt-get install -y nginx
 RUN pip install flask
 #ADD hello.py /home/ubuntu/hello.py
