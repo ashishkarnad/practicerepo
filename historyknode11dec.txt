@@ -1,0 +1,1281 @@
+    1  ls -tlhr
+    2  docker ps
+    3  ls 
+    4  cd proj/
+    5  ls -la
+    6  git status
+    7  git init
+    8  git remote show origin
+    9  docker-compose ps
+   10  sudo apt-get install -y docker-compose
+   11  docker-compose ps
+   12  pwd
+   13  vim docker-compose.yaml
+   14  pwd
+   15  vim docker-compose.yaml
+   16  ls -la
+   17  vim docker-compose.yaml 
+   18  ls -la
+   19  docker-compose up -d
+   20  ls -tlhr
+   21  cd ssl/
+   22  ls -la
+   23  cd ../nginx.conf/
+   24  ls -la
+   25  cd ..
+   26  vim docker-compose.yaml 
+   27  docker container ls
+   28  docker ps
+   29  docker ps -a
+   30  vim docker-compose.yaml 
+   31  docker-compose up
+   32  vim docker-compose.yaml 
+   33  ls -la
+   34  sudo rm -fr nginx
+   35  sudo rm -fr nginx.conf/
+   36  ls -la
+   37  docker-compose ps
+   38  docker-compose up
+   39  vim docker-compose.yaml 
+   40  ls -la
+   41  cd nginx/
+   42  ls -la
+   43  cd ..
+   44  ls -la
+   45  sudo rm -fr nginx ssl
+   46  ls -la
+   47  mkdir data/nginx
+   48  mkdir data
+   49  cd data
+   50  mkdir nginx
+   51  cd nginx/
+   52  vim app.conf
+   53  cp app.conf /home/ubuntu/
+   54  ls -tlhr /home/ubuntu/*
+   55  cat > app.conf 
+   56  vim app.conf 
+   57  cd
+   58  curl -L https://raw.githubusercontent.com/wmnnd/nginx-certbot/master/init-letsencrypt.sh > init-letsencrypt.sh
+   59  vim init-letsencrypt.sh 
+   60  sudo init 0
+   61  docker ps
+   62  cd proj/
+   63  ls -la
+   64  cd
+   65  sudo mkdir -p /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site
+   66  sudo vim /docker/letsencrypt-docker-nginx/src/letsencrypt/docker-compose.yml
+   67  sudo vim /docker/letsencrypt-docker-nginx/src/letsencrypt/nginx.conf
+   68  sudo vim /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site/index.html
+   69  <html>
+   70  <head>
+   71  vim ~/.bash_history 
+   72  cd /docker/letsencrypt-docker-nginx/src/letsencrypt
+   73  ls -tlh
+   74  sudo docker-compose up -d
+   75  cat docker-compose.yml 
+   76  ls
+   77  cat nginx.conf 
+   78  vim nginx.conf 
+   79  sudo vim nginx.conf 
+   80  docker-compose down
+   81  docker ps
+   82  docker ps -a
+   83  sudo docker-compose up -d
+   84  docker ps
+   85  sudo docker-compose down
+   86  sudo docker-compose up
+   87  docker ps
+   88  ls
+   89  cat nginx.conf 
+   90  docker container ls
+   91  docker container exec -it 70303caf4e7c /bin/bash
+   92  vim nginx.conf 
+   93  docker-compose down
+   94  sudo docker-compose up -d
+   95  docker ps
+   96  docker stats
+   97  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --register-unsafely-without-email --agree-tos --webroot-path=/data/letsencrypt --staging \
+   98  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --register-unsafely-without-email --agree-tos --webroot-path=/data/letsencrypt --staging -d gharpedeliver.in-d www.gharpedeliver.in
+   99  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --register-unsafely-without-email --agree-tos --webroot-path=/data/letsencrypt --staging -d gharpedeliver.in -d www.gharpedeliver.in
+  100  docker ps
+  101  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --register-unsafely-without-email --agree-tos --webroot-path=/data/letsencrypt --staging -d www.gharpedeliver.in
+  102  docker-compose down
+  103  sudo init 0
+  104  docker ps
+  105  cd proj/
+  106  ls -la
+  107  cd
+  108  sudo mkdir -p /docker/letsencrypt-docker-nginx/src/production/production-site
+  109  sudo mkdir -p /docker/letsencrypt-docker-nginx/src/production/dh-param
+  110  sudo vim /docker/letsencrypt-docker-nginx/src/production/docker-compose.yml
+  111  sudo vim /docker/letsencrypt-docker-nginx/src/production/production.conf
+  112  sudo openssl dhparam -out /docker/letsencrypt-docker-nginx/src/production/dh-param/dhparam-2048.pem 2048
+  113  cd /docker/letsencrypt-docker-nginx/src/production/production-site/
+  114  cat > index.html
+  115  sudo cat > index.html
+  116  ls -tlhr
+  117  vim index.html
+  118  sudo vim index.html
+  119  ls -la
+  120  cd ..
+  121  l s-la
+  122  ls -la
+  123  docker-compose up  -d
+  124  docker-compose ps
+  125  sudo docker-compose up  -d
+  126  docker-compose ps
+  127  sudo docker-compose up 
+  128  ls -lthr
+  129  cd dh-param/
+  130  ls -la
+  131  cd ..
+  132  ls
+  133  cd ..
+  134  ls -la
+  135  cd letsencrypt/letsencrypt-site/
+  136  ls 
+  137  cd ..
+  138  ls -la
+  139  cd ..
+  140  ls -la
+  141  cd ..
+  142  ls -la
+  143  cd ..
+  144  ls -la
+  145  cd letsencrypt-docker-nginx/src/
+  146  ls -la
+  147  cd letsencrypt/letsencrypt-site/
+  148  ls 0a
+  149  ls -la
+  150  cd ..
+  151  l s-la
+  152  ls -la
+  153  sudo docker-compose up 
+  154  cd
+  155  grep -R "docker-entrypoint.sh" .
+  156  pwd
+  157  ls
+  158  sudo grep -R "docker-entrypoint.sh" /
+  159  sudo vim /docker/letsencrypt-docker-nginx/src/production/production.conf
+  160  cd -
+  161  ls -la
+  162  vim nginx.conf 
+  163  vim docker-compose.yml 
+  164  ls 
+  165  cd ..
+  166  ls
+  167  cd production/
+  168  ls -la
+  169  sudo docker-compose up 
+  170  sudo docker-compose down
+  171  sudo netstat  -tulnp | grep ":80"
+  172  sudo fuser -k tcp/80
+  173  sudo netstat  -tulnp | grep ":80"
+  174  sudo fuser -k 80/tcp
+  175  sudo netstat  -tulnp | grep ":80"
+  176  sudo docker-compose down
+  177  sudo docker-compose up
+  178  docker continer ls
+  179  docker container ls
+  180  sudo container stop 1abca3eb04a2
+  181  docker container stop 1abca3eb04a2
+  182  docker container rm 1abca3eb04a2
+  183  sudo docker-compose up
+  184  docker container ls
+  185  docker ps
+  186  docker ps -a
+  187  sudo docker-compose ps
+  188  sudo docker-compose down
+  189  sudo docker-compose up
+  190  sudo docker-compose down
+  191  sudo su
+  192  ls -la
+  193  cd ..
+  194  ls -la
+  195  cd ..
+  196  ls -la
+  197  sudo chown -R ubuntu:ubuntu letsencrypt-docker-nginx
+  198  cd letsencrypt-docker-nginx/src/production/production-site/
+  199  ls -la
+  200  cd ..
+  201  ls -la
+  202  sudo docker-compose up
+  203  sudo docker-compose ps
+  204  sudo docker-compose --verbose
+  205  sudo docker-compose up --verbose
+  206  sudo docker-compose up -verbose
+  207  sudo docker-compose up
+  208  ls
+  209  vim docker-compose.yml 
+  210  docker ps -a
+  211  docker container rm 4047f3ff1b9c
+  212  docker ps -a
+  213  docker container rm 8dc329516bf0
+  214  docker ps -a
+  215  ls -la
+  216  cd production-site/
+  217  ls -la
+  218  cd ..
+  219  ls -la
+  220  cat docker-compose.yml 
+  221  docker-compose up
+  222  docker-compose down
+  223  sudo docker-compose up -d
+  224  sudo docker-compose ps
+  225  cd
+  226  ls -la
+  227  cat init-letsencrypt.sh 
+  228  cd /docker
+  229  ls -la
+  230  cd -
+  231  cd letsencrypt-docker-nginx/src/production/production-site/
+  232  ls-la
+  233  ls -la
+  234  cd ..
+  235  s -la
+  236  ls -la
+  237  cd production-site/
+  238  ls -la
+  239  cd ..
+  240  ls -a
+  241  ls -la
+  242  sudo docker-compose up -d
+  243  sudo docker-compose ps
+  244  sudo docker-compose ps -a
+  245  docker ps -a
+  246  sudo docker-compose up
+  247  ls
+  248  vim docker-compose.yml 
+  249  vim production
+  250  vim production.conf 
+  251  sudo docker-compose up
+  252  cd /var/lib/docker
+  253  ls
+  254  sudo su
+  255  ls -la
+  256  cd
+  257  cd -
+  258  cd
+  259  cd /docker-volumes/
+  260  ls -la
+  261  cd /etc
+  262  ls -la
+  263  cd pwd
+  264  cd -
+  265  ls
+  266  ls -la
+  267  cd etc
+  268  ls
+  269  cd letsencrypt/
+  270  ls -la
+  271  cd live
+  272  ls -la
+  273  sudo su
+  274  ls -la
+  275  cd
+  276  cd /docker/letsencrypt-docker-nginx/src/production/
+  277  ls -la
+  278  vim docker-compose.yml 
+  279  sudo docker-compose up
+  280  sudo su
+  281  ls -la
+  282  vim docker-compose.yml 
+  283  sudo docker-compose up
+  284  docker container ls
+  285  docker ps -a
+  286  docker container rm a043bb0de4de
+  287  docker ps -a
+  288  cd ..
+  289  ls -la
+  290  cd ..
+  291  sudo su
+  292  cd -
+  293  ls
+  294  cd letsencrypt-docker-nginx/src/production/
+  295  ls -la
+  296  vim docker-compose.yml 
+  297  cd
+  298  sudo rm -rf /docker-volumes/
+  299  cd /docker
+  300  ls
+  301  cd letsencrypt-docker-nginx/
+  302  ls -la
+  303  cd src
+  304  ls
+  305  cd production/
+  306  ls -la
+  307  vim docker-compose.yml 
+  308  sudo docker-compose up
+  309  cd ../..
+  310  cd ../
+  311  ls
+  312  cd ..
+  313  cd docker-volumes/
+  314  ls -la
+  315  cd etc
+  316  ls
+  317  cd letsencrypt/live/gharpedelivery.in/
+  318  ls -la
+  319  cd ..
+  320  pwd
+  321  cd /docker/letsencrypt-docker-nginx/src/production/
+  322  vim docker-compose.yml 
+  323  sudo rm -fr /docker-volumes
+  324  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedelivery.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt -d gharpedelivery.in -d www.gharpedelivery.in
+  325  docker ps -a
+  326  docker rm c7fb7342b816  be88560e2ffc
+  327  docker ps -a
+  328  cd ..
+  329  ls -la
+  330  cd letsencrypt/letsencrypt-site/
+  331  ls -la
+  332  cd ..
+  333  ls -la
+  334  cat nginx.conf 
+  335  cat docker-compose.yml 
+  336  docker-compose up -d
+  337  docker-compose ps
+  338  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedelivery.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt -d gharpedelivery.in -d www.gharpedelivery.in
+  339  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedelivery.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt -d www.gharpedelivery.in
+  340  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedelivery.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt -d www.gharpedeliver.in
+  341  vim nginx.conf 
+  342  cd /docker-volumes/etc/letsencrypt/live/
+  343  sudo su
+  344  cd /docker/letsencrypt-docker-nginx/src/
+  345  ls
+  346  ls -la
+  347  cd letsencrypt/letsencrypt-site/
+  348  ls
+  349  cd ..
+  350  ls -la
+  351  dock-compose down
+  352  docker-compose down
+  353  docker ps -a
+  354  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedeliver.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt -d www.gharpedeliver.in
+  355  docker ps -a
+  356  l
+  357  ls
+  358  ls -la
+  359  cd ..
+  360  ls
+  361  cd production/production-site/
+  362  ls
+  363  cd ..
+  364  ls
+  365  docker-compose up
+  366  sud su
+  367  sudo su
+  368  docker-compose up
+  369  ls -la
+  370  vim docker-compose.yml 
+  371  vim production
+  372  vim production.conf 
+  373  ls -la
+  374  cd dh-param/
+  375  ls -la
+  376  cd ..
+  377  sudo rm -fr dh-param
+  378  sudo openssl dhparam -out /docker/letsencrypt-docker-nginx/src/production/dh-param/dhparam-2048.pem 2048
+  379  mkdir dh-param
+  380  ls -la
+  381  sudo openssl dhparam -out /docker/letsencrypt-docker-nginx/src/production/dh-param/dhparam-2048.pem 2048
+  382  cd dh-param/
+  383  ls -la
+  384  cat dhparam-2048.pem 
+  385  cd ..
+  386  l s-la
+  387  ls -la
+  388  vim docker-compose.yml 
+  389  cd /docker-volumes/etc/letsencrypt/live/www.gharpedeliver.in/
+  390  ls -la
+  391  cd -
+  392  vim docker-compose.yml 
+  393  docker ps -a
+  394  docker rm cf63fe7c636e
+  395  docker ps -a
+  396  docker-compose up
+  397  vim docker-compose.yml 
+  398  ls
+  399  vim production
+  400  vim production.conf 
+  401  docker ps -a
+  402  docker r 748
+  403  docker rm 748
+  404  docker ps -a
+  405  docker-compose up
+  406  cd /docker-volumes/var/log/letsencrypt/
+  407  ls
+  408  ls -tlrh
+  409  tail -f letsencrypt.log
+  410  tail -100f letsencrypt.log
+  411  ls -la
+  412  cd ..
+  413  ls
+  414  cd ..
+  415  ls -la
+  416  cd lib/letsencrypt/
+  417  ls -la
+  418  cd ..
+  419  ls -la
+  420  cd ..
+  421  ls -la
+  422  cd ../etc
+  423  ls
+  424  cd letsencrypt/
+  425  ls -la
+  426  cd live/
+  427  ls -la
+  428  sudo rm -fr www.gharpedelivery.in/
+  429  ls -la
+  430  sudo rm -fr gharpedelivery.in
+  431  ls -la
+  432  cat README 
+  433  cd /docker/letsencrypt-docker-nginx/src/production/
+  434  docker ps -a
+  435  docker rm d676
+  436  docker ps -a
+  437  docker-compose up
+  438  vim docker-compose.yml 
+  439  vim production.conf 
+  440  vim docker-compose.yml 
+  441  docker ps -a
+  442  docker rm 369
+  443  docker-compose up
+  444  cd /docker-volumes/etc/letsencrypt/
+  445  ls -la
+  446  cd keys/
+  447  ls -la
+  448  date
+  449  cd ..
+  450  ls
+  451  cd scr
+  452  cd csr/
+  453  ls -la
+  454  cd ..
+  455  ls -la
+  456  cd live/
+  457  ls -la
+  458  sudo rm -fr www.gharpedelivery.in
+  459  ls -la
+  460  sudo rm -fr www.gharpedeliver.in/
+  461  ls -la
+  462  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedeliver.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt -d gharpedeliver.in -d www.gharpedeliver.in
+  463  docker container ls
+  464  cd -
+  465  cd /docker/letsencrypt-docker-nginx/src/
+  466  ls -la
+  467  cd letsencrypt/letsencrypt-site/
+  468  cd ..
+  469  ls -la
+  470  docker-compose up
+  471  vim docker-compose.yml 
+  472  cd -
+  473  cd ..
+  474  cd /docker-volumes/etc/letsencrypt/live/
+  475  ls -al
+  476  docker ps
+  477  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedeliver.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt -d gharpedeliver.in -d www.gharpedeliver.in
+  478  docker ps
+  479  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedeliver.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt -d gharpedeliver.in -d www.gharpedeliver.in
+  480  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedeliver.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt -d www.gharpedeliver.in
+  481  ls -la
+  482  cd www.gharpedeliver.in-0001/
+  483  ls -la
+  484  cd ..
+  485  sudo rm -fr www.gharpedeliver.in-0001
+  486  ls -la
+  487  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedeliver.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt -d www.gharpedeliver.in
+  488  ls -la
+  489  cd ../../
+  490  ls -al
+  491  cd letsencrypt/
+  492  ls -al
+  493  cd ..
+  494  ls -la
+  495  cd letsencrypt/
+  496  ls -al
+  497  cd live
+  498  ls -la
+  499  cd www.gharpedeliver.in-0002/
+  500  ls -la
+  501  cd /docker/letsencrypt-docker-nginx/src/production/
+  502  ls
+  503  vim docker-compose.yml 
+  504  cd /docker-volumes/
+  505  ls -la
+  506  cd etc/letsencrypt/live/
+  507  ls -lthr
+  508  cd ..
+  509  ls -la
+  510  cd live/www.gharpedeliver.in-0002/
+  511  ls -l
+  512  cd ..
+  513  ls -la
+  514  cd ..
+  515  sudo rm -fr /docker-volumes/
+  516  cd
+  517  cd /docker/letsencrypt-docker-nginx/src/
+  518  ls -la
+  519  cd production/
+  520  ls -la
+  521  vim production
+  522  vim production.conf 
+  523  vim docker-compose.yml 
+  524  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedeliver.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt -d gharpedeliver.in
+  525  vim production.conf 
+  526  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedeliver.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt -d gharpedeliver.in
+  527  ls -la
+  528  docker container ls
+  529  cd ..
+  530  cd ./letsencrypt/
+  531  ls
+  532  docker-compose up
+  533  docker container ls
+  534  cd -
+  535  ls
+  536  cd production/
+  537  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedeliver.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt --staging -d gharpedeliver.in
+  538  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedeliver.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt -d gharpedeliver.in
+  539  cd /docker-volumes/etc/letsencrypt/live/
+  540  sudos u
+  541  sudo su
+  542  docker-compose ps
+  543  docker-compose down
+  544  sudo rm -fr /docker-volumes/
+  545  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedeliver.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt --staging -d gharpedeliver.in -d www.gharpedeliver.in
+  546  sudo docker run -it --rm -v /docker-volumes/etc/letsencrypt:/etc/letsencrypt -v /docker-volumes/var/lib/letsencrypt:/var/lib/letsencrypt -v /docker/letsencrypt-docker-nginx/src/letsencrypt/letsencrypt-site:/data/letsencrypt -v "/docker-volumes/var/log/letsencrypt:/var/log/letsencrypt" certbot/certbot certonly --webroot --email ashish@gharpedeliver.in --agree-tos --no-eff-email --webroot-path=/data/letsencrypt -d gharpedeliver.in -d www.gharpedeliver.in
+  547  docker ps -a
+  548  docker-compose down
+  549  docker-compose up
+  550  sudo fuser -k 80/tcp
+  551  docker-compose up
+  552  sudo fuser -k 80/tcp
+  553  docker container ls
+  554  docker stop 999 && docker rm 999
+  555  docker container ls
+  556  sudo fuser -k 80/tcp
+  557  docker-compose up
+  558  vim production.conf 
+  559  ls
+  560  vim docker-compose.yml 
+  561  vim production.conf 
+  562  cd /docker-volumes/etc/letsencrypt/live/
+  563  sudo su
+  564  history
+  565  sudo su
+  566  docker-compose ps
+  567  docker container ls
+  568  docker ps -a
+  569  docker rm 8cf
+  570  docker-compose up
+  571  ls -la
+  572  cd production-site/
+  573  ls -la
+  574  cd ..
+  575  docker-compose up -d
+  576  docker-compose ps
+  577  docker container ls
+  578  cd /docker-volumes/etc/letsencrypt/live/
+  579  ls -la
+  580  cd gharpedeliver.in/
+  581  ls -la
+  582  docker-compose logs
+  583  cd -
+  584  cd /docker/letsencrypt-docker-nginx/src/production/
+  585  ls -la
+  586  docker-compose logs
+  587  docker container ls
+  588  docker container exec -it ee3 /bin/bash
+  589  docker-compose logs
+  590  docker-compose logs | more
+  591  vim production.conf 
+  592  docker-compose down
+  593  docker-compose up
+  594  docker-compose ps
+  595  docker-compose logs | more
+  596  vim production.conf 
+  597  docker container ls
+  598  docker-compose down
+  599  docker container ls
+  600  docker ps -a
+  601  docker-compose up -d
+  602  docker-compose logs | more
+  603  ls -la
+  604  cd production-site/
+  605  ls -la
+  606  exit
+  607  ls -tlhr
+  608  unzip DarazWeb.zip 
+  609  sudo apt-get install -y tar
+  610  sudo apt-get install -y unzip
+  611  unzi DarazWeb.zip 
+  612  unzip DarazWeb.zip 
+  613  ls -tlhr
+  614  cd daraz/
+  615  ls -la
+  616  cd /docker/letsencrypt-docker-nginx/src/production/production-site/
+  617  ls -lthr
+  618  mv index.html index.html_bkp
+  619  cp /home/ubuntu/daraz .
+  620  cp -r /home/ubuntu/daraz .
+  621  ls -tlhr
+  622  cd daraz/
+  623  ls
+  624  mv * ../.
+  625  ls -la
+  626  cd ..
+  627  ls -la
+  628  cd ..
+  629  docker-compose down
+  630  docker-compose up -d
+  631  docker-compose logs
+  632  sed -i s/daraz/ashish/g *
+  633  ls -la
+  634  cd production-site/
+  635  sed -i '' -e 's/daraz/ashish/g' $(find . -type f )
+  636  sed -i '' -e 's/daraz/ashish/g' $(find /docker/letsencrypt-docker-nginx/src/production/production-site -type f )
+  637  sed -i '' -e 's/daraz/ashish/g' $(find /docker/letsencrypt-docker-nginx/src/production/production-site/ -type f )
+  638  ls -l
+  639  sudo sed -i '' -e 's/daraz/ashish/g' $(find /docker/letsencrypt-docker-nginx/src/production/production-site -type f )
+  640  sudo sed -i '' -e 's/daraz/ashish/g' $(find /docker/letsencrypt-docker-nginx/src/production/production-site -type d )
+  641  sudo sed -i '' -e 's/daraz/ashish/g' $(find /docker/letsencrypt-docker-nginx/src/production/production-site/ -type d )
+  642  sed -i -- 's/daraz/ashish/g' *
+  643  ls -la
+  644  grep -R "daraz" .
+  645  grep -R "daraz" ./daraz
+  646  sudo grep -R "daraz" .
+  647  find . -type f -exec sed -i 's/daraz/ashish/g' {} +
+  648  vim index.html
+  649  sed -i -- 's/experties/expertise/g' *
+  650  find . -type f -exec sed -i 's/experties/expertise/g' {} +
+  651  docker-compose down
+  652  docker-compose up
+  653  grep -R "experties" .
+  654  grep -R "experties" *.*
+  655  sudo grep -R "experties" /
+  656  cd ..
+  657  sudo grep -R "experties" production/
+  658  ls -la
+  659  sudo grep -R "experties" production-site/
+  660  sudo vim /etc/hosts
+  661  sudo reboot
+  662  vim ~/.bashrc
+  663  set HOSTNAME=kubenode.localdomain
+  664  sudo reboot
+  665  set HOSTNAME=kubenode.localdomain
+  666  sudo vim /etc/hosts
+  667  sudo vim /etc/cloud/cloud.cfg
+  668  set HOSTNAME=kubenode.localdomain
+  669  sudo reboot
+  670  set HOSTNAME=kubenode.localdomain
+  671  sudo vim /etc/cloud/cloud.cfg
+  672  set HOSTNAME=kubenode.localdomain
+  673  sudo vim /etc/hosts
+  674  set HOSTNAME=kubenode.localdomain
+  675  sudo vim /etc/cloud/cloud.cfg
+  676  sudo reboot
+  677  docker s
+  678  docker ps
+  679  htop
+  680  history | grep  flannel
+  681  history
+  682  docker ps
+  683  docker ps -a
+  684  docker image ls
+  685  history | more
+  686  docker system prune -a
+  687  docker ps
+  688  docker ps -a
+  689  docker images -f dangling=true
+  690  docker ps -a -f status=Exited
+  691  docker ps -a -f status=xxited
+  692  docker ps -a -f status=eited
+  693  docker ps -a -f status=exited
+  694  docker ps -a
+  695  docker image ls
+  696  docker ps
+  697  docker container ls
+  698  sudo init 0
+  699  kubectl run sise --image=quay.io/openshiftlabs/simpleservice:0.5.0 --port=9876
+  700  docker ps -a
+  701  docker ps
+  702  kubeadm join 172.31.46.148:6443 --token 3u3wc9.547glyfs3uk0y1ry     --discovery-token-ca-cert-hash sha256:f51ef3c2e0b9aa3550483b08c43dfc8d2931ce5f5147b2875654b90379c77677
+  703  sudo kubeadm join 172.31.46.148:6443 --token 3u3wc9.547glyfs3uk0y1ry     --discovery-token-ca-cert-hash sha256:f51ef3c2e0b9aa3550483b08c43dfc8d2931ce5f5147b2875654b90379c77677
+  704  cd /etc
+  705  ls
+  706  cd kubernetes/
+  707  ls -la
+  708  rm *
+  709  sudo rm *
+  710  sudo rm -fr pki
+  711  ls -la
+  712  cd ..
+  713  sudo chown -R ubuntu:ubuntu kubernetes
+  714  cd
+  715  sudo kubeadm join 172.31.46.148:6443 --token 3u3wc9.547glyfs3uk0y1ry     --discovery-token-ca-cert-hash sha256:f51ef3c2e0b9aa3550483b08c43dfc8d2931ce5f5147b2875654b90379c77677
+  716  sudo fuser -k tcp/10250
+  717  sudo fuser -k 10250/tcp
+  718  cd -
+  719  cd kubernetes/
+  720  ls -la
+  721  cd ..
+  722  cd
+  723  sudo fuser -k tcp/10250
+  724  sudo fuser -k 10250/tcp
+  725  sudo kubeadm join 172.31.46.148:6443 --token 3u3wc9.547glyfs3uk0y1ry     --discovery-token-ca-cert-hash sha256:f51ef3c2e0b9aa3550483b08c43dfc8d2931ce5f5147b2875654b90379c77677
+  726  cd /etc/kubernetes
+  727  cd ..
+  728  sudo rm -fr kubernetes
+  729  cd
+  730  whereis kubernetes
+  731  sudo fuser -k 10250/tcp
+  732  ps -aef | grep kube
+  733  sudo kubeadm join 172.31.46.148:6443 --token 3u3wc9.547glyfs3uk0y1ry     --discovery-token-ca-cert-hash sha256:f51ef3c2e0b9aa3550483b08c43dfc8d2931ce5f5147b2875654b90379c77677
+  734  cd /etc/
+  735  ls -la
+  736  sudo rm -fr kubernetes
+  737  cd
+  738  sudo fuser -k 10250/tcp
+  739  sudo kubeadm join 172.31.46.148:6443 --token 3u3wc9.547glyfs3uk0y1ry     --discovery-token-ca-cert-hash sha256:f51ef3c2e0b9aa3550483b08c43dfc8d2931ce5f5147b2875654b90379c77677 --v=5
+  740  cd /var/run
+  741  ls -lthr *.sock
+  742  sudo chown -R ubuntu:docker *.sock
+  743  ls -lthr *.sock
+  744  cd 
+  745  cd /etc
+  746  sudo rm -fr kubernetes
+  747  cd 
+  748  sudo fuser -k 10250/tcp
+  749  sudo kubeadm join 172.31.46.148:6443 --token 3u3wc9.547glyfs3uk0y1ry     --discovery-token-ca-cert-hash sha256:f51ef3c2e0b9aa3550483b08c43dfc8d2931ce5f5147b2875654b90379c77677 --v=5
+  750  sudo vim /etc/hostname
+  751  sudo vim /etc/hosts
+  752  sudo vim /etc/hostname
+  753  source /etc/hostname
+  754  sudo reboot
+  755  cd /var/lib/cni
+  756  sudo su
+  757  sudo vim /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+  758  sudo kubeadm join 172.31.46.148:6443 --token y2gnv9.z5ohbgwk84534lm8     --discovery-token-ca-cert-hash sha256:33073611061eab8346cc377cc603a44a7bb4df58c7b495651f4c67a96d00f411
+  759  sudo fuser -k 10250/tcp
+  760  cd /etc
+  761  sudo rm -fr kubernetes
+  762  cd
+  763  sudo kubeadm join 172.31.46.148:6443 --token y2gnv9.z5ohbgwk84534lm8     --discovery-token-ca-cert-hash sha256:33073611061eab8346cc377cc603a44a7bb4df58c7b495651f4c67a96d00f411 --v=5
+  764  cd /etc
+  765  sudo rm -fr kubernetes
+  766  sudo fuser -k 10250/tcp
+  767  sudo kubeadm join 172.31.46.148:6443 --token y2gnv9.z5ohbgwk84534lm8     --discovery-token-ca-cert-hash sha256:33073611061eab8346cc377cc603a44a7bb4df58c7b495651f4c67a96d00f411 --v=5
+  768  history
+  769  sudo fuser -k 10250/tcp
+  770  sudo kubeadm join 172.31.46.148:6443 --token y2gnv9.z5ohbgwk84534lm8     --discovery-token-ca-cert-hash sha256:33073611061eab8346cc377cc603a44a7bb4df58c7b495651f4c67a96d00f411 --v=5
+  771  sudo fuser -k 10250/tcp
+  772  cd /etc/
+  773  sudo rm -fr kubernetes/
+  774  sudo rm -fr kubernetes
+  775  cd
+  776  sudo kubeadm join 172.31.46.148:6443 --token y2gnv9.z5ohbgwk84534lm8     --discovery-token-ca-cert-hash sha256:33073611061eab8346cc377cc603a44a7bb4df58c7b495651f4c67a96d00f411 --v=5
+  777  sudo fuser -k 10250/tcp
+  778  sudo kubeadm join 172.31.46.148:6443 --token y2gnv9.z5ohbgwk84534lm8     --discovery-token-ca-cert-hash sha256:33073611061eab8346cc377cc603a44a7bb4df58c7b495651f4c67a96d00f411 --v=5
+  779  sudo init 0
+  780  ls -tlhr
+  781  cd proj/
+  782  ls -la
+  783  docker ps
+  784  whereis kubectl
+  785  htohtop
+  786  sudo kubeadm join 172.31.46.148:6443 --token 3c4wo1.szlzbgjwqhsvz9tk     --discovery-token-ca-cert-hash sha256:72c1250950081acb8e40c3be10dc9768f32f87f8154d97c0903663637940c634
+  787  cd /etc/
+  788  l s-la
+  789  ls -la
+  790  cd
+  791  sudo kubeadm join 172.31.46.148:6443 --token 3c4wo1.szlzbgjwqhsvz9tk     --discovery-token-ca-cert-hash sha256:72c1250950081acb8e40c3be10dc9768f32f87f8154d97c0903663637940c634
+  792  cd /etc/kubernetes/
+  793  cd ..
+  794  ls -la kubernetes/
+  795  sudo rm -fr kubernetes/
+  796  sudo fuser -k tcp/10250
+  797  sudo fuser -k 10250/tcp
+  798  sudo kubeadm join 172.31.46.148:6443 --token 3c4wo1.szlzbgjwqhsvz9tk     --discovery-token-ca-cert-hash sha256:72c1250950081acb8e40c3be10dc9768f32f87f8154d97c0903663637940c634
+  799  ls -la
+  800  cd
+  801  sudo kubeadm init
+  802  cd /var/lib
+  803  sudo rm -fr etcd
+  804  cd
+  805  sudo kubeadm init
+  806  sudo kubeadm join 172.31.46.148:6443 --token 3c4wo1.szlzbgjwqhsvz9tk     --discovery-token-ca-cert-hash sha256:72c1250950081acb8e40c3be10dc9768f32f87f8154d97c0903663637940c634
+  807  sudo fuser -k 10250/tcp
+  808  sudo netstat -tulnp 
+  809  cd /etc/
+  810  sudo rm -fr kubernetes/
+  811  cd /var/lib/
+  812  l s-la
+  813  ls -la
+  814  cd etc
+  815  cd etcd/
+  816  sudo su
+  817  ls -la
+  818  cd
+  819  sudo kubeadm join 172.31.46.148:6443 --token 3c4wo1.szlzbgjwqhsvz9tk     --discovery-token-ca-cert-hash sha256:72c1250950081acb8e40c3be10dc9768f32f87f8154d97c0903663637940c634
+  820  sudo fuser -k 10250/tcp
+  821  sudo kubeadm join 172.31.46.148:6443 --token 3c4wo1.szlzbgjwqhsvz9tk     --discovery-token-ca-cert-hash sha256:72c1250950081acb8e40c3be10dc9768f32f87f8154d97c0903663637940c634
+  822  cd /etc/
+  823  cd
+  824  kubeadm reset
+  825  sudo kubeadm reset
+  826  vim .kube/config 
+  827  cat " " > .kube/config 
+  828  cat > .kube/config 
+  829  echo "" > .kube/config 
+  830  vim .kube/config 
+  831  kubeadm join 172.31.46.148:6443 --token l2pbdf.j9c5czjnb28qtcsz     --discovery-token-ca-cert-hash sha256:2a8f7fcb58a344f507ac356147578ebb51f7d841d883e3ae3630c07152c088f2
+  832  sudo fuser -k 10250/tcp
+  833  sudo kubeadm join 172.31.46.148:6443 --token l2pbdf.j9c5czjnb28qtcsz     --discovery-token-ca-cert-hash sha256:2a8f7fcb58a344f507ac356147578ebb51f7d841d883e3ae3630c07152c088f2
+  834  kubectl get nodes
+  835  sudo kubectl get nodes
+  836  sudo fuser -k 8080/tcp
+  837  sudo kubectl get nodes
+  838  cd .kube
+  839  ls -la
+  840  cd ..
+  841  vim .kube/config 
+  842  cd /etc/kubernetes/
+  843  ls -la
+  844  sudo 
+  845  htop
+  846  vim kubelet.conf 
+  847  sudo vim kubelet.conf 
+  848  sudo cp kubelet.conf admin.conf
+  849  cd 
+  850  sudo kubeadm join 172.31.46.148:6443 --token l2pbdf.j9c5czjnb28qtcsz     --discovery-token-ca-cert-hash sha256:2a8f7fcb58a344f507ac356147578ebb51f7d841d883e3ae3630c07152c088f2
+  851  sudo rm -fr /etc/kubernetes
+  852  sudo fuser -k 10250/tcp
+  853  sudo kubeadm join 172.31.46.148:6443 --token l2pbdf.j9c5czjnb28qtcsz     --discovery-token-ca-cert-hash sha256:2a8f7fcb58a344f507ac356147578ebb51f7d841d883e3ae3630c07152c088f2
+  854  kubectl get nodes
+  855  sudo kubectl get nodes
+  856  sudo su
+  857  sudo kubeadm join 172.31.46.148:6443 --token l2pbdf.j9c5czjnb28qtcsz     --discovery-token-ca-cert-hash sha256:2a8f7fcb58a344f507ac356147578ebb51f7d841d883e3ae3630c07152c088f2
+  858  sudo rm -fr /etc/kubernetes
+  859  cd /etc/
+  860  ls 
+  861  sudo kubeadm join 172.31.46.148:6443 --token l2pbdf.j9c5czjnb28qtcsz     --discovery-token-ca-cert-hash sha256:2a8f7fcb58a344f507ac356147578ebb51f7d841d883e3ae3630c07152c088f2
+  862  kubectl get pods
+  863  cd
+  864  sudo kubectl get pods
+  865  kubect get pods
+  866  kubectl get pods
+  867  vim .kube/config 
+  868  cd /etc/kubernetes/
+  869  ls -la
+  870  cd /run
+  871  ls
+  872  cd
+  873  kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+  874  cd /run
+  875  kubectl get pods
+  876  docker ps
+  877  docker ps -a
+  878  q
+  879  sudo kubeadm join 172.31.46.148:6443 --token v2xnkl.26qg1sxwscfw6chz --discovery-token-ca-cert-hash sha256:72c1250950081acb8e40c3be10dc9768f32f87f8154d97c0903663637940c634
+  880  sudo rm -fr /etc/kubernetes
+  881  ls -la
+  882  sudo fuser -k 10250/tcp
+  883  kubeadm join 172.31.46.148:6443 --token v2xnkl.26qg1sxwscfw6chz --discovery-token-ca-cert-hash sha256:72c1250950081acb8e40c3be10dc9768f32f87f8154d97c0903663637940c634
+  884  sudo kubeadm join 172.31.46.148:6443 --token v2xnkl.26qg1sxwscfw6chz --discovery-token-ca-cert-hash sha256:72c1250950081acb8e40c3be10dc9768f32f87f8154d97c0903663637940c634
+  885  sudo kubeadm reset
+  886  kubeadm join 172.31.46.148:6443 --token 00gr45.a5xn099t8krudwek     --discovery-token-ca-cert-hash sha256:5e339a02cfe9b14a4a71043ab53688823d7865834edd2511b0faf21b55447112
+  887  sudo fuser -k 10250/tcp
+  888  cd /var/lib/
+  889  ls etcd
+  890  cd
+  891  sud kubeadm join 172.31.46.148:6443 --token 00gr45.a5xn099t8krudwek \
+  892  sudo kubeadm join 172.31.46.148:6443 --token 00gr45.a5xn099t8krudwek     --discovery-token-ca-cert-hash sha256:5e339a02cfe9b14a4a71043ab53688823d7865834edd2511b0faf21b55447112
+  893  kubectl get nodes
+  894  sudo kubectl get nodes
+  895  echo $KUBECONFIG 
+  896  export KUBECONFIG=/etc/kubernetes/admin.conf
+  897  echo $KUBECONFIG 
+  898  sudo kubectl get nodes
+  899  cd /etc/kubernetes/
+  900  ls -la
+  901  cd ..
+  902  ls -la
+  903  sudo chown -R ubuntu:ubuntu /etc/kubernetes
+  904  ls -la
+  905  sudo kubectl get nodes
+  906  sudo netstat -tulnp | grep "8080"
+  907  sudo kubectl get nodes
+  908  exit
+  909  sudo kubectl get nodes
+  910  kubectl get nds
+  911  kubectl get nodes
+  912  sudo chown -R ubuntu:ubuntu /var/lib/kubelet
+  913  kubectl get nodes
+  914  kubeadm reset
+  915  sudo kubeadm reset
+  916  kubeadm join 172.31.46.148:6443 --token 00gr45.a5xn099t8krudwek     --discovery-token-ca-cert-hash sha256:5e339a02cfe9b14a4a71043ab53688823d7865834edd2511b0faf21b55447112
+  917  sudo kubeadm join 172.31.46.148:6443 --token 00gr45.a5xn099t8krudwek     --discovery-token-ca-cert-hash sha256:5e339a02cfe9b14a4a71043ab53688823d7865834edd2511b0faf21b55447112
+  918  kubectl get nodes
+  919  kubectl get pods
+  920  sudo chown -R ubuntu:ubuntu /var/lib/kubelet
+  921  kubectl get pods
+  922  cd /var/lib/
+  923  ls -a
+  924  ls -la
+  925  cd kubelet/
+  926  ls -la
+  927  cd pki
+  928  ls -la
+  929  sudo kubectl get pods
+  930  kubectl get pods
+  931  cd
+  932  ls -la
+  933  cd .kube/
+  934  ls -la
+  935  cd
+  936  echo $KUBECONFIG 
+  937  vim /home/ubuntu/.kube/admin.conf
+  938  rm /home/ubuntu/.kube/config
+  939  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config 
+  940  kubectl get pods
+  941  sudo kubectl get pods
+  942  ls -tlhr /etc/kubernetes/
+  943  kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+  944  sudo kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+  945  sudo rm -fr /etc/kubernetes
+  946  sudo kubeadm reset
+  947  cd .kube/
+  948  ls -la
+  949  rm *
+  950  rm -fr *
+  951  ls -la
+  952  cd
+  953  sudo fuser -k 10250/tcp
+  954  kubeadm join 172.31.46.148:6443 --token 00gr45.a5xn099t8krudwek --discovery-token-ca-cert-hash sha256:5e339a02cfe9b14a4a71043ab53688823d7865834edd2511b0faf21b55447112
+  955  sudo fuser -k 10250/tcp
+  956  sudo kubeadm join 172.31.46.148:6443 --token 00gr45.a5xn099t8krudwek --discovery-token-ca-cert-hash sha256:5e339a02cfe9b14a4a71043ab53688823d7865834edd2511b0faf21b55447112
+  957  sudo fuser -k 10250/tcp
+  958  sud kubeadm reset
+  959  sudo kubeadm reset
+  960  cd .kube/
+  961  ls
+  962  ls -la
+  963  cd
+  964  sudo fuser -k 10250/tcp
+  965  echo $KUBECONFIG 
+  966  cd .kube/
+  967  ls -la
+  968  vim ~/.bashrc
+  969  source ~/.bashrc
+  970  cd .
+  971  ls -la
+  972  cd ..
+  973  ls -la
+  974  kubeadm join 172.31.46.148:6443 --token 00gr45.a5xn099t8krudwek --discovery-token-ca-cert-hash sha256:5e339a02cfe9b14a4a71043ab53688823d7865834edd2511b0faf21b55447112
+  975  sudo kubeadm join 172.31.46.148:6443 --token 00gr45.a5xn099t8krudwek --discovery-token-ca-cert-hash sha256:5e339a02cfe9b14a4a71043ab53688823d7865834edd2511b0faf21b55447112
+  976  sudo kubeadm reset
+  977  sudo rm -fr /etc/cni/*
+  978  cd /etc/cni/
+  979  ls -la
+  980  cd ..
+  981  ls -la
+  982  cd
+  983  kubeadm join 172.31.46.148:6443 --token 93u1zt.srrlvtrc664tn9p4 --discovery-token-ca-cert-hash sha256:a68f2e4156b5d4ab71232d7b9b1f7ed5897ba2bc37860d4f09ad08a260093d31
+  984  sudo kubeadm join 172.31.46.148:6443 --token 93u1zt.srrlvtrc664tn9p4 --discovery-token-ca-cert-hash sha256:a68f2e4156b5d4ab71232d7b9b1f7ed5897ba2bc37860d4f09ad08a260093d31
+  985  cd /etc/cni/net.d
+  986  ls
+  987  ls -la
+  988  cd
+  989  cd .kube/
+  990  ls -la
+  991  cd
+  992  kubeadm join 172.31.46.148:6443 --token lsz7tk.t7l159v3bqk4wbc6 --discovery-token-ca-cert-hash sha256:464f7519f7e43492e17d2881c5eb07f8d639de7ff71eb4abb52a4d8860136300
+  993  sudo fuser -k 10250/tcp
+  994  cd /var/lib/
+  995  ls etcd
+  996  sud su
+  997  sudo su
+  998  cd
+  999  sudo kubeadm join 172.31.46.148:6443 --token lsz7tk.t7l159v3bqk4wbc6 --discovery-token-ca-cert-hash sha256:464f7519f7e43492e17d2881c5eb07f8d639de7ff71eb4abb52a4d8860136300
+ 1000  sudo fuser -k 10250/tcp
+ 1001  sudo rm -fr /etc/kubernetes
+ 1002  sudo kubeadm join 172.31.46.148:6443 --token lsz7tk.t7l159v3bqk4wbc6 --discovery-token-ca-cert-hash sha256:464f7519f7e43492e17d2881c5eb07f8d639de7ff71eb4abb52a4d8860136300
+ 1003  docker ps
+ 1004  kubectl get nodes
+ 1005  ls -trlh
+ 1006  vim shutdown.sh
+ 1007  chmod +x shutdown.sh 
+ 1008  pwd
+ 1009  crontab -e
+ 1010  docker ps
+ 1011  docker image ls
+ 1012  docker pull openjdk:8
+ 1013  docker inspect openjdk:8
+ 1014  docker inspect openjdk:8 | more
+ 1015  ls -tlhr
+ 1016  docker ps
+ 1017  exit
+ 1018  crontab -e
+ 1019  ./shutdown.sh 
+ 1020  htop
+ 1021  kubectl get pods
+ 1022  htop
+ 1023  ip  l
+ 1024  ip r l
+ 1025  htop
+ 1026  sudo netstat -tulnp 
+ 1027  docker container ls | grep jenkins
+ 1028  docker ps
+ 1029  crontab -e
+ 1030  exit
+ 1031  kubectl get pods
+ 1032  sudo init 0
+ 1033  htop
+ 1034  do-release-upgrade
+ 1035  sudo apt-get update
+ 1036  exit
+ 1037  docker ps
+ 1038  exit
+ 1039  htop
+ 1040  exit
+ 1041  htop
+ 1042  exit
+ 1043  docker container ls
+ 1044  kubectl --help
+ 1045  kubectl get pods
+ 1046  docker ps
+ 1047  docker container exec -it 0276dc3dde25 /bin/bash
+ 1048  docker container ls
+ 1049  docker ps
+ 1050  docker ps | awk -F " " '{ print $2 }'
+ 1051  clear
+ 1052  docker ps | awk -F " " '{ print $2 }'
+ 1053  docker ps | awk -F " " '{ print $2 }' | grep nginx
+ 1054  docker ps | awk -F " " '{ print $7 }' | grep nginx
+ 1055  docker ps | awk -F " " '{ print $7 }'
+ 1056  docker ps | awk -F " " '{ print $13 }'
+ 1057  docker ps | awk -F " " '{ print $12 }'
+ 1058  docker ps | awk -F " " '{ print $14 }'
+ 1059  docker ps
+ 1060  docker container stop 5d793bd60091 3a7aaaad4ba1 
+ 1061  docker ps
+ 1062  sudo init 0
+ 1063  exit
+ 1064  sudo netstat -tulnp | grep ":8080"
+ 1065  docker ps
+ 1066  docker ps  | grep ngin
+ 1067  sudo kubeadm join 172.31.46.148:6443 --token lsz7tk.t7l159v3bqk4wbc6 --discovery-token-ca-cert-hash sha256:464f7519f7e43492e17d2881c5eb07f8d639de7ff71eb4abb52a4d8860136300 --cloud-provieer=aws
+ 1068  sudo kubeadm join 172.31.46.148:6443 --token lsz7tk.t7l159v3bqk4wbc6 --discovery-token-ca-cert-hash sha256:464f7519f7e43492e17d2881c5eb07f8d639de7ff71eb4abb52a4d8860136300 --cloud-provider=aws
+ 1069  sudo kubeadm join 172.31.46.148:6443 --token lsz7tk.t7l159v3bqk4wbc6 --discovery-token-ca-cert-hash sha256:464f7519f7e43492e17d2881c5eb07f8d639de7ff71eb4abb52a4d8860136300 --cloud-provider=aws --v=5
+ 1070  curl http://169.254.169.254/latest/meta-data/local-hostname
+ 1071  hostnamectl
+ 1072  hostnamectl set-hostname $(curl http://169.254.169.254/latest/meta-data/local-hostname)
+ 1073  sudo hostnamectl set-hostname $(curl http://169.254.169.254/latest/meta-data/local-hostname)
+ 1074  hostnamectl
+ 1075  echo $hostname
+ 1076  cat /etc/hostname 
+ 1077  sudo init 0
+ 1078  apt-cache madison docker-ce
+ 1079  sudo apt-get install docker-ce=5:20.10.8~3-0~ubuntu-bionic docker-ce-cli=5:20.10.8~3-0~ubuntu-bionic containerd.io
+ 1080  kubeadm join 172.31.46.148:6443 --token 0crp1b.q6icqsilrv14qxdc \
+ 1081  sudo kubeadm join 172.31.46.148:6443 --token 0crp1b.q6icqsilrv14qxdc         --discovery-token-ca-cert-hash sha256:fb6b545b26b6de33c15e4b24b5c4a823e3996a338f1c15ac20e7505d1ff0d330
+ 1082  cd .kube/
+ 1083  ls -la
+ 1084  cd
+ 1085  cd /etc/kubernetes/pki/
+ 1086  ls -la
+ 1087  cd ..
+ 1088  ls -la
+ 1089  cd ..
+ 1090  sudo rm -fr kubernetes/
+ 1091  cd
+ 1092  ls -la
+ 1093  sudo kubeadm join 172.31.46.148:6443 --token 0crp1b.q6icqsilrv14qxdc         --discovery-token-ca-cert-hash sha256:fb6b545b26b6de33c15e4b24b5c4a823e3996a338f1c15ac20e7505d1ff0d330
+ 1094  sudo kubeadm join 172.31.46.148:6443 --token 0crp1b.q6icqsilrv14qxdc         --discovery-token-ca-cert-hash sha256:fb6b545b26b6de33c15e4b24b5c4a823e3996a338f1c15ac20e7505d1ff0d330 --v=5
+ 1095  sudo fuser -k 10248/tcp
+ 1096  sudo fuser -k 6443/tcp
+ 1097  sudo fuser -k 10250/tcp
+ 1098  sudo kubeadm join 172.31.46.148:6443 --token 0crp1b.q6icqsilrv14qxdc         --discovery-token-ca-cert-hash sha256:fb6b545b26b6de33c15e4b24b5c4a823e3996a338f1c15ac20e7505d1ff0d330
+ 1099  sudo apt-get install -y kubelet
+ 1100  sudo apt-get install kubelet
+ 1101  sudo kubeadm join 172.31.46.148:6443 --token 0crp1b.q6icqsilrv14qxdc         --discovery-token-ca-cert-hash sha256:fb6b545b26b6de33c15e4b24b5c4a823e3996a338f1c15ac20e7505d1ff0d330
+ 1102  kubelet --version
+ 1103  sudo kubeadm join 172.31.46.148:6443 --token 0crp1b.q6icqsilrv14qxdc         --discovery-token-ca-cert-hash sha256:fb6b545b26b6de33c15e4b24b5c4a823e3996a338f1c15ac20e7505d1ff0d330
+ 1104  sudo apt-get install  docker-ce=5:18.09.1~3-0~ubuntu-bionic
+ 1105  docker --version
+ 1106  sudo kubeadm join 172.31.46.148:6443 --token 0crp1b.q6icqsilrv14qxdc         --discovery-token-ca-cert-hash sha256:fb6b545b26b6de33c15e4b24b5c4a823e3996a338f1c15ac20e7505d1ff0d330
+ 1107  kubelet --version
+ 1108  sudo kubeadm join 172.31.46.148:6443 --token 0crp1b.q6icqsilrv14qxdc         --discovery-token-ca-cert-hash sha256:fb6b545b26b6de33c15e4b24b5c4a823e3996a338f1c15ac20e7505d1ff0d330
+ 1109  kubeadm join 172.31.46.148:6443 --token ta116e.2zs4ex1efpvskas5 \
+ 1110  sudo fuser -k 10248/tcp
+ 1111  sudo fuser -k 10251/tcp
+ 1112  sudo kubeadm join 172.31.46.148:6443 --token ta116e.2zs4ex1efpvskas5         --discovery-token-ca-cert-hash sha256:2f0fd050da328522df231294f142a192f22ed9c05d80785024345bf581ef3a9e --verbose
+ 1113  sudo kubeadm join 172.31.46.148:6443 --token ta116e.2zs4ex1efpvskas5         --discovery-token-ca-cert-hash sha256:2f0fd050da328522df231294f142a192f22ed9c05d80785024345bf581ef3a9e --=5
+ 1114  sudo kubeadm join 172.31.46.148:6443 --token ta116e.2zs4ex1efpvskas5         --discovery-token-ca-cert-hash sha256:2f0fd050da328522df231294f142a192f22ed9c05d80785024345bf581ef3a9e --v=5
+ 1115  kubelet --version
+ 1116  touch join.yaml
+ 1117  vim join.yaml 
+ 1118  sudo kubeadm join 172.31.46.148:6443 --token ta116e.2zs4ex1efpvskas5         --discovery-token-ca-cert-hash sha256:2f0fd050da328522df231294f142a192f22ed9c05d80785024345bf581ef3a9e --v=5 --config join.yaml 
+ 1119  sudo apt-get remove kubelet kubeadm kubectl
+ 1120  sudo apt-get remove docker-ce
+ 1121  sudo autoremove
+ 1122  sudo apt autoremove
+ 1123  sudo apt-get update
+ 1124  sudo swapoff -a
+ 1125  sudo vim /etc/fstab 
+ 1126  sudo vim /etc/hostname 
+ 1127  dpkg -l containerd*
+ 1128  sudo apt install containerd
+ 1129  dpkg -l containerd*
+ 1130  exit
+ 1131  apt-get update && apt-get install -y apt-transport-https curl
+ 1132  sudo apt-get update && apt-get install -y apt-transport-https curl
+ 1133  sudo 
+ 1134  sudo su
+ 1135  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+ 1136  sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+ 1137  sudo su
+ 1138  sudo apt-get update
+ 1139  cat <<EOF >/etc/apt/sources.list.d/kubernetes.list
+ 1140  deb http://apt.kubernetes.io/ kubernetes-xenial main
+ 1141  EOF
+ 1142  echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+ 1143  sudo apt-get update
+ 1144  sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
+ 1145  echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+ 1146  sudo apt-get update
+ 1147  sudo apt-get install -y kubelet kubeadm kubectl
+ 1148  sudo apt-mark hold kubelet kubeadm kubectl
+ 1149  cat <<EOF | sudo tee /etc/modules-load.d/containerd.conf
+ 1150  overlay
+ 1151  br_netfilter
+ 1152  EOF
+ 1153  sudo modprobe overlay
+ 1154  sudo modprobe br_netfilter
+ 1155  # Setup required sysctl params, these persist across reboots.
+ 1156  cat <<EOF | sudo tee /etc/sysctl.d/99-kubernetes-cri.conf
+ 1157  net.bridge.bridge-nf-call-iptables  = 1
+ 1158  net.ipv4.ip_forward                 = 1
+ 1159  net.bridge.bridge-nf-call-ip6tables = 1
+ 1160  EOF
+ 1161  # Apply sysctl params without reboot
+ 1162  sudo sysctl --system
+ 1163  sudo mkdir -p /etc/containerd
+ 1164  containerd config default | sudo tee /etc/containerd/config.toml
+ 1165  sudo systemctl restart containerd
+ 1166  kubelet --version
+ 1167  docker ps 
+ 1168  sudo chown -R ubuntu:ubuntu /var/run/docker.sock 
+ 1169  docker ps 
+ 1170  exit
+ 1171  docker ps 
+ 1172  sudo apt-get remove docker docker-engine docker.io containerd runc
+ 1173  sudo apt-get update
+ 1174  sudo apt-get install     apt-transport-https     ca-certificates     curl     gnupg     lsb-release
+ 1175  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+ 1176  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+ 1177  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+ 1178    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+ 1179  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+ 1180    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+ 1181  sudo apt-get update
+ 1182  sudo apt-get install docker-ce docker-ce-cli containerd.io
+ 1183  sudo apt-get install docker-ce=5:18.09.0~3-0~ubuntu-bionic docker-ce-cli=5:18.09.0~3-0~ubuntu-bionic containerd.io
+ 1184  docker ps
+ 1185  sudo kubeadm join 172.31.46.148:6443 --token n0e1vn.j3sj61wy37oqvnsl         --discovery-token-ca-cert-hash sha256:b3c4db4284e58bc5d8577bd179f59ed4758a10bb0ab600fcdb75045042a54858 --v=5
+ 1186  docker ps
+ 1187  docker ps -a
+ 1188  sudo kubeadm join 172.31.46.148:6443 --token udosos.3ncgfwe0ctq215co         --discovery-token-ca-cert-hash sha256:14c52f03525d1498d3a910b66ff8d574fb6d96109ac755d11f6848dc0e4ef583
+ 1189  sudo rm -fr /etc/kubernetes/
+ 1190  sudo fuser -k 10250/tcp
+ 1191  sudo kubeadm join 172.31.46.148:6443 --token udosos.3ncgfwe0ctq215co         --discovery-token-ca-cert-hash sha256:14c52f03525d1498d3a910b66ff8d574fb6d96109ac755d11f6848dc0e4ef583
+ 1192  sudo kubeadm join 172.31.46.148:6443 --token udosos.3ncgfwe0ctq215co         --discovery-token-ca-cert-hash sha256:14c52f03525d1498d3a910b66ff8d574fb6d96109ac755d11f6848dc0e4ef583 --v=5
+ 1193  sudo fuser -k 10250/tcp
+ 1194  sudo rm -fr /etc/kubernetes
+ 1195  sudo kubeadm join 172.31.46.148:6443 --token udosos.3ncgfwe0ctq215co         --discovery-token-ca-cert-hash sha256:14c52f03525d1498d3a910b66ff8d574fb6d96109ac755d11f6848dc0e4ef583 --v=5
+ 1196  sudo chown -R ubuntu:ubuntu /var/run/dockershim.sock
+ 1197  sudo fuser -k 10250/tcp
+ 1198  sudo rm -fr /etc/kubernetes
+ 1199  sudo kubeadm join 172.31.46.148:6443 --token udosos.3ncgfwe0ctq215co         --discovery-token-ca-cert-hash sha256:14c52f03525d1498d3a910b66ff8d574fb6d96109ac755d11f6848dc0e4ef583 --v=5
+ 1200  sudo su
+ 1201  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+ 1202  kubelet --version
+ 1203  docker --version
+ 1204  kubeadm join 172.31.46.148:6443 --token n0e1vn.j3sj61wy37oqvnsl         --discovery-token-ca-cert-hash sha256:b3c4db4284e58bc5d8577bd179f59ed4758a10bb0ab600fcdb75045042a54858
+ 1205  sudo fuser -k 10250/tcp
+ 1206  sudo kubeadm join 172.31.46.148:6443 --token n0e1vn.j3sj61wy37oqvnsl         --discovery-token-ca-cert-hash sha256:b3c4db4284e58bc5d8577bd179f59ed4758a10bb0ab600fcdb75045042a54858
+ 1207  sudo rm -fr /etc/kubernetes
+ 1208  sudo fuser -k 10250/tcp
+ 1209  sudo kubeadm join 172.31.46.148:6443 --token n0e1vn.j3sj61wy37oqvnsl         --discovery-token-ca-cert-hash sha256:b3c4db4284e58bc5d8577bd179f59ed4758a10bb0ab600fcdb75045042a54858 --v=5
+ 1210  sudo rm -fr /etc/kubernetes
+ 1211  sudo fuser -k 10250/tcp
+ 1212  sudo rm -fr /etc/kubernetes
+ 1213  sudo fuser -k 10250/tcp
+ 1214  sudo kubeadm join 172.31.46.148:6443 --token n0e1vn.j3sj61wy37oqvnsl         --discovery-token-ca-cert-hash sha256:b3c4db4284e58bc5d8577bd179f59ed4758a10bb0ab600fcdb75045042a54858 --v=5
+ 1215  sudo rm -fr /etc/kubernetes
+ 1216  sudo fuser -k 10250/tcp
+ 1217  sudo rm -fr /etc/kubernetes
+ 1218  sudo kubeadm join 172.31.46.148:6443 --token n0e1vn.j3sj61wy37oqvnsl         --discovery-token-ca-cert-hash sha256:b3c4db4284e58bc5d8577bd179f59ed4758a10bb0ab600fcdb75045042a54858 --v=5
+ 1219  sudo init 0
+ 1220  kubectl version
+ 1221  sudo apt-get remove kubectl
+ 1222  sudo apt autoremove
+ 1223  sudo apt-get install -q kubectl=1.19.4-00 kubectl=1.19.4-00
+ 1224  kubectl version
+ 1225  kubelet version
+ 1226  kubectl version
+ 1227  kubeadm join 172.31.46.148:6443 --token irg5x1.n4bsmnjap7r9ac7b     --discovery-token-ca-cert-hash sha256:abb931d6adab17fd7cdb6246538c1097d973bec5f89153ec1b994fa480fbaae3
+ 1228  sudo apt-get install -q kubeadm=1.19.4-00 
+ 1229  kubeadm join 172.31.46.148:6443 --token irg5x1.n4bsmnjap7r9ac7b     --discovery-token-ca-cert-hash sha256:abb931d6adab17fd7cdb6246538c1097d973bec5f89153ec1b994fa480fbaae3
+ 1230  sudo kubeadm join 172.31.46.148:6443 --token irg5x1.n4bsmnjap7r9ac7b     --discovery-token-ca-cert-hash sha256:abb931d6adab17fd7cdb6246538c1097d973bec5f89153ec1b994fa480fbaae3
+ 1231  sudo init 0
+ 1232  docker run ubuntu ubuntu-sleeper sleep 10
+ 1233  docker ps
+ 1234  docker run ubuntu
+ 1235  docker ps
+ 1236  docker ps -a
+ 1237  docker ps
+ 1238  docker ps -a
+ 1239  docker run ubuntu sleep 120
+ 1240  docker ps
+ 1241  vim ubslp.yaml
+ 1242  docker build -t .
+ 1243  docker build --help
+ 1244  docker build -t .
+ 1245  docker build --help
+ 1246  docker build -t ubuntu-sleeper .
+ 1247  ls -tlrh
+ 1248  mv ubslp.yaml ubslp.dockerfile
+ 1249  docker build -t ubuntu-sleeper .
+ 1250  mv ubslp.dockerfile Dockerfile
+ 1251  docker build -t ubuntu-sleeper .
+ 1252  vim Dockerfile 
+ 1253  docker build -t ubuntu-sleeper .
+ 1254  docker ps
+ 1255  docker ps 
+ 1256  docker run ubuntu-sleeper sleep 20
+ 1257  docker ps 
+ 1258  watch -n3 docker ps
+ 1259  exit
+ 1260  sudo init 0
+ 1261  ls
+ 1262  cd proj/
+ 1263  ls -la
+ 1264  git push
+ 1265  git push --set-upstream origin master
+ 1266  git pull
+ 1267  git branch --set-upstream-to=origin/master master
+ 1268  git pull
+ 1269  git push --set-upstream origin master
+ 1270  l s-lth
+ 1271  ls -tlhr
+ 1272  git remote set-url origin https://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@github.com/ashishkarnad/practicerepo.git
+ 1273  git pull
+ 1274  git push
+ 1275  git remote set-url origin https://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@github.com/ashishkarnad/practicerepo.git
+ 1276  git pull
+ 1277  git push
+ 1278  ls -la
+ 1279  git push
+ 1280  cd
+ 1281  history > historyknode11dec.txt

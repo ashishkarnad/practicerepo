@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  reverse:
+    container_name: reverse
+    hostname: reverse
+    image: nginx
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /home/ubuntu/proj/nginx/:/etc/nginx
+      - /home/ubuntu/proj/ssl/:/etc/ssl/private
